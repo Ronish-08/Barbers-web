@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sharp Cuts Barbershop</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111, #333);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      animation: slideUp 1.2s ease-in-out;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #444;
+      border-left: 5px solid #f04e31;
+      padding-left: 0.5rem;
+      font-size: 1.8rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: #fff;
+      margin: 0.5rem 0;
+      padding: 0.75rem 1rem;
+      border-left: 5px solid #f04e31;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sharp Cuts Barbershop</h1>
+    <p>Your Local Fresh Fade Experts</p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>📍 Location</h2>
+      <p>123 Main Street, Harrisburg, PA</p>
+    </section>
+
+    <section>
+      <h2>🕒 Hours</h2>
+      <p>Mon–Fri: 9am – 7pm<br>Sat: 10am – 5pm<br>Sun: Closed</p>
+    </section>
+
+    <section>
+      <h2>📞 Contact</h2>
+      <p>Call or text: (555) 123-4567</p>
+    </section>
+
+    <section>
+      <h2>💈 Services</h2>
+      <ul>
+        <li>Haircuts – $20</li>
+        <li>Beard Trim – $10</li>
+        <li>Line Up – $5</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📸 Our Work</h2>
+      <div class="gallery">
+        <img src="blog-hair-woe-fixes-TheLockerroom-1.webp" alt="Haircut 1">
+        <img src="istockphoto-937443868-170667a.jpg" alt="Haircut 2">
+        <img src="photo-id-2000621830213-barber-checking-symmetry-of-haircut.webp" alt="Haircut 3">
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Sharp Cuts Barbershop • Designed by Ronish Pokhrel</p>
+  </footer>
+
+</body>
+</html>
